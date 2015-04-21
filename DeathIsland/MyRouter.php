@@ -37,7 +37,7 @@ class MyRouter {
         );
 
         $app->get(          // par la méthode GET
-            '/partie',      // Sur l'url /partie
+            '/partie/:id',      // Sur l'url /partie
             function($id) use ($app) {  // on récupère la partie dont l'id est passé en paramètre
 
                 $idMembre = $_SESSION['idMembre'];
